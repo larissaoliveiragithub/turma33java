@@ -1,16 +1,15 @@
 programa
 {
-    inclua biblioteca Matematica-->mat
+    
 
     funcao inicio()
     {
 
-        cadeia nome
+       
         real nota1, nota2, nota3, media
-        real arredonda
+       
 
-        escreva("Qual nome do Aluno: ")
-        leia (nome)
+      
         escreva("Insira a Nota 1: ")
         leia (nota1)
         escreva("Insira a Nota 2: ")
@@ -18,11 +17,9 @@ programa
         escreva("Insira a Nota 3: ")
         leia (nota3)
 
-        media=(nota1+nota2+nota3)/3
+        media=((nota1*2)+(nota2*3)+(nota3*5))/10
       
-        arredonda = mat.arredondar(media,2)
-        escreva("A média do aluno "+nome+ " é: " +arredonda)
-
+        escreva("A média do Aluno é: " +media)
     }
 }
 /* $$$ Portugol Studio $$$ 
@@ -30,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 230; 
+ * @POSICAO-CURSOR = 393; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

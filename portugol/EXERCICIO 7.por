@@ -1,7 +1,6 @@
 programa
 {
 	
-inclua biblioteca Matematica 
 
 	funcao inicio()
 	{
@@ -9,7 +8,6 @@ inclua biblioteca Matematica
          inteiro d, ee, f
          inteiro x, y
 
-         //entrada
          escreva("a: ")
          leia(a)
          escreva("b: ")
@@ -23,14 +21,14 @@ inclua biblioteca Matematica
          escreva("f: ")
          leia(f)
 
-         //processamento
+        
          x = ((c*ee) - (b*f)) / ((a*ee) - (b*d))
          y = ((a*f) - (c*d) / (a*ee) - (b*d))
 
          c = ((a*x) + (b*y))
          f = ((d*x) + (ee*y))
 
-         //saida
+      
          escreva("O valor de x: "+x)
          escreva("O valor de y: "+y)
 	}
@@ -40,7 +38,7 @@ inclua biblioteca Matematica
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 220; 
+ * @POSICAO-CURSOR = 130; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
