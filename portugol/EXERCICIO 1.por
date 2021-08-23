@@ -1,4 +1,4 @@
-programa 
+programa 
 {
 	
 	funcao inicio()
@@ -13,7 +13,7 @@ programa
 		leia(anoNascimento)
 		escreva("Digite o mês do seu nascimento: ")
 		leia(mesNascimento)
-		escreva("Digite o dia do seu nascimento: ")
+		escreva("Digite o ano do seu nascimento: ")
 		leia(diaNascimento)
 		idade = (anoNascimento * 365) + (mesNascimento * 30) + diaNascimento
 		escreva("A sua idade em dias é de:  " + idade)
@@ -25,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 384; 
+ * @POSICAO-CURSOR = 281; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
