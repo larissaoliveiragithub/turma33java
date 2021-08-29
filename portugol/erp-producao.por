@@ -46,11 +46,11 @@ programa{
 	}
 	
      funcao listarProduto(){
-      	cadeia valorProduto[10] = {"0.00 ","0.00 ","0.00 ","0.00 ","0.00 ","0.00 ","0.00 ","0.00 ","0.00 ","0.00 "}
-          cadeia estoqueProduto[10]={"10","10","10","10","10","10","10","10","10","10"}
+      	inteiro valorProduto[10] = {200, 150, 100, 50, 500, 1000, 30, 25, 40, 120 }
+          inteiro estoqueProduto[10]={10,10,10,10,10,10,10,10,10,10}
           cadeia vetorProduto[10]
-          cadeia codigoProduto[10]
-         
+          cadeia codigoProduto[10] 
+          inteiro carrinho [10]={10,10,10,10,10,10,10,10,10,10}
          //Declaração do vetor e limite do laço
 		const inteiro TAMANHO_VETOR=10 
 			 inteiro vetor01[TAMANHO_VETOR]
@@ -68,17 +68,26 @@ programa{
 		vetorProduto[8] = "Bola de futebol   "  
 		vetorProduto[9] = "Blusa moleton Nike"
 
-          //cabeçalho
           
+          //cabeçalho
+          escreva("LISTA DE PRODUTO\n")
+          escreva("\n")
           escreva("COD"+"\tPRODUTO"+"\t\t\tVALOR" +"\t\tESTOQUE\n")
           
 		para(inteiro x=0; x<TAMANHO_VETOR; ++x){
 			//Carga no vetor
 			vetor01[x] = x
-	          escreva("G2-" +(x+1)+ " "+"\t" +vetorProduto[x]+"\t"+"R$ " +valorProduto[x]+ "\t"+estoqueProduto[x]+ "\n")
+	          escreva("G2-" +(x+1)+ " "+"\t" +vetorProduto[x]+"\t"+"R$ " +valorProduto[x]+ "\t\t"+estoqueProduto[x]+ "\n")
 	          
 		    }
-	      }
+		   escreva("\n")
+	        escreva("CARRINHO DE COMPRAS")
+	        escreva("\n")
+	     }
+           
+            //Carrinho de compras
+          
+     
      funcao perguntar(){
 	caracter valor, s = 's', n = 'n'
 	escreva("\t\t\t DESEJA FAZER COMPRAS? DIGITE.. \n")
@@ -93,6 +102,9 @@ programa{
 		escreva("Ok.. Até logo!")
 		}senao{
 			escreva("Valor digitado é inválido")
+		
+		
+		
 		}
 	}
 
@@ -103,7 +115,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1008; 
+ * @POSICAO-CURSOR = 2874; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
