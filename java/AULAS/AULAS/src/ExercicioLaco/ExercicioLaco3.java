@@ -30,7 +30,7 @@ public class ExercicioLaco3 {
 			System.out.println("A Pessoa é adulta!");
 			}
 		else {
-			System.out.println("Idaade inválida!");
+			System.out.println("Idade inválida!");
 		}
 		
 		

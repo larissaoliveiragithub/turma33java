@@ -16,10 +16,10 @@ public class ExercicioLaco01 {
 		System.out.println("Digite o primeiro número: ");
 		primeiro = leia.nextInt();
 		
-		System.out.println("Digite o segundo número: ");
+		System.out.println("Digite o segundo número");
 		segundo = leia.nextInt();
 		
-		System.out.println("Digite o terceiro número: ");
+		System.out.println("Digite o terceiro número");
 		terceiro = leia.nextInt();
 		
 		if((primeiro > segundo) && (primeiro > terceiro)) {

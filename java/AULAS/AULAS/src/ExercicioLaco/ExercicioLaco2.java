@@ -39,7 +39,7 @@ public class ExercicioLaco2 {
 		System.out.println("A ordem crescente é: "+terceiro+" / " + primeiro+" / " + segundo);
 	    }
 	else if((terceiro >= primeiro) && (terceiro >= segundo) && (segundo >= primeiro) ) {
-		System.out.println("A ordem crescente é: "+terceiro+" / " + segundo+" / " + primeiro);
+		System.out.println("A ordem crescente é: "+terceiro+" / " + segundo+ " / "+ primeiro);
 	    }
 	 
 	
