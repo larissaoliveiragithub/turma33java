@@ -1,11 +1,11 @@
 /**
- * @author Paulo, Matehus, Beatriz, Fernando, Larissa e Leonardo. 
+ * @author Paulo, Matehus, Beatriz, Fernando e Leonardo. 
  * ECOMMERCE - DEV SHOES
  
  * GENERATION 2021
  */
 
-package Ecommerce;
+package ecommerce;
 //############## IMPORTS ###################
 
 import java.util.Scanner;
