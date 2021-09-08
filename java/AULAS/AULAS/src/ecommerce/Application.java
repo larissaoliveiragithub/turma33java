@@ -1,5 +1,5 @@
 /**
- * @author Paulo, Matehus, Beatriz, Fernando e Leonardo. 
+ * @author Paulo, Matehus, Beatriz, Fernando, Larissa e Leonardo. 
  * ECOMMERCE - DEV SHOES
  
  * GENERATION 2021
