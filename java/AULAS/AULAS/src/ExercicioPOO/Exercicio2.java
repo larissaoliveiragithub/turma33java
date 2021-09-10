@@ -5,7 +5,7 @@ import ExercicioPOO.Exercicio2POO.Aviao;
 public class Exercicio2 {
 
 
-	public class Exercicio2 {
+
 
 		public static void main(String[] args) {
 
@@ -23,4 +23,3 @@ public class Exercicio2 {
 		}
 
 	}
-}

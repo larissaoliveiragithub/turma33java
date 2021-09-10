@@ -1,7 +1,7 @@
 package ExercicioLaco;
 
 public class Carro {
-	public class Carro {
+	
 		public boolean ligado=false;
 		public String modelo;
 		public int ano;
@@ -24,5 +24,5 @@ public class Carro {
 			}
 		}
 
-	}
 }
+
