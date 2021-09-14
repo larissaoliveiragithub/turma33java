@@ -14,11 +14,12 @@ public class App {
 		getApresentacao();
 		erp();
 	}
-
+   
 	// Forma de pagamento
 	public static void formaPagamento() {
 		System.out.println("Escolha forma de pagamento: ");
 
+		
 	}
 
 	// Função apresentação
@@ -63,8 +64,9 @@ public class App {
 
 				if (flag.equalsIgnoreCase("n")) {
 					System.out.println("Forma de pagamento");
-
 					util.formaPagamento(null, quantidade, id);
+
+
 					
 					System.out.print("Deseja emitir sua Nota Fiscal? S/N");
 					op = sc.next();
@@ -73,7 +75,7 @@ public class App {
 						System.out.println("\nDeseja fazer uma nova compra?");
 					} else if ("s".equalsIgnoreCase(op)) {
 
-						 util.emitirNota();
+					 util.emitirNota();
 						System.out.println();
 
 						util.totalizador(id, quantidade);

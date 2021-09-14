@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Carrinho {
+	static ERP util = new ERP();
 	//Lista de Items no carrinho
 	private List<ItemCarrinho> itens;
 	private Produto produto;
@@ -46,7 +47,7 @@ public class Carrinho {
 		}
 	}
 	
-	public void nota(Produto produto, int quantidade, String id){
+	public void nota( int quantidade, String id){
    
 		System.out.println("\n\n\n");
 		System.out.println("\n\t\t==== NOTA FISCAL DO CONSUMIDOR ====\n");
@@ -58,11 +59,10 @@ public class Carrinho {
 			
 		
 		}
-		System.out.println("O valor da Nota Fiscal é de: ");
 		
 	}
 	
-	//Método que mostra items adicionados
+	//Método que mostra items adicionado
 	private void mostraItem(ItemCarrinho item) {
 		Produto produto = item.getProduto();
 		String id = produto.getId();
