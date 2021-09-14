@@ -56,34 +56,37 @@ public class ERP {
 		System.out.println("Selecione a forma de pagamento: ");
 		System.out.println("1 Débito ");
 		System.out.println("2 Crédito ");
-		System.out.println("3 3x parcelado ");
+		System.out.println("3 2x parcelado ");
 
 		op = sc.nextInt();
 
 		if (op == 1) {
-			System.out.println("Débito!");
+			
 			valorTotal = produto1.getPreco() * quantidade;
 			valorNota = valorTotal * (10.00 / 100.00);
 			valorTotal = valorTotal - valorNota;
-			System.out.println(valorTotal);
-			System.out.println(valorNota);
+			System.out.printf("O valor total da nota é de: R$%.2f%s",valorTotal,"\n");
+			System.out.printf("Desconto no valor de: R$%.2f%s",valorNota,"\n\n");
+		
 
 		} else if (op == 2) {
-			System.out.println("Crédito!");
+			
 			valorTotal = produto1.getPreco() * quantidade;
 			valorNota = valorTotal * (10.00 / 100.00);
 			valorNota = valorTotal * (9.00 / 100.00);
 			valorTotal = valorTotal + valorNota;
-			System.out.println(valorTotal);
-			System.out.println(valorNota);
+			System.out.printf("O valor total da nota é de: R$%.2f%s",valorTotal,"\n");
+			System.out.printf("Acréscimo no valor de: R$%.2f%s",valorNota,"\n\n");
 		} else if (op == 3) {
-			System.out.println("Parcelado em 3x!");
+			
 			valorTotal = produto1.getPreco() * quantidade;
 			valorNota = valorTotal * (15.00 / 100.00);
 			valorNota = valorTotal * (9.00 / 100.00);
 			valorTotal = valorTotal + valorNota;
 			System.out.println(valorTotal);
 			System.out.println(valorNota);
+			System.out.printf("O valor total da nota é de: R$%.2f%s",valorTotal,"\n");
+			System.out.printf("Acréscimo no valor de: R$%.2f%s",valorNota,"\n\n");
 			valorParcela = valorTotal / 2;
 			System.out.println(valorParcela);
 		} else {

@@ -59,7 +59,7 @@ public class App {
 				System.out.println("\n\n");
 				util.totalizador(id, quantidade);
 				System.out.println();
-				System.out.println("\nDeseja continuar a compra? S/N");
+				System.out.println("\nDeseja continuar comprando? S/N");
 				flag = sc.nextLine();
 
 				if (flag.equalsIgnoreCase("n")) {
