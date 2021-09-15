@@ -5,15 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Carrinho {
-	static ERP util = new ERP();
 	//Lista de Items no carrinho
 	private List<ItemCarrinho> itens;
-	private Produto produto;
+	
 	//Atributos
 	private double valorCompra;
 	private int total;
 	private String modoPagamento;
-	
 	//Formatação
 	static String formatter = "%-4s %-40s %-8s %-4s";
 	
@@ -38,32 +36,33 @@ public class Carrinho {
 	//Método que lista os produtos
 	public void listaProdutos(){
 		System.out.println("\nProdutos no carrinho: \n");
-		System.out.format(formatter, "ID", "NOME", "PRECO", "QUANTIDADE");
+		formatarTexto();
 		System.out.println();
 	
 		for (ItemCarrinho item : this.itens) {
 			this.mostraItem(item);
-			
 		}
 	}
 	
-	public void nota( int quantidade, String id){
-   
+	//Método formatação.
+	public void formatarTexto() {
+		System.out.format(formatter, "ID", "NOME", "PRECO", "QUANTIDADE");
+	}
+	
+	public void nota(){
 		System.out.println("\n\n\n");
 		System.out.println("\n\t\t==== NOTA FISCAL DO CONSUMIDOR ====\n");
-		System.out.format(formatter, "ID", "NOME", "PRECO", "QUANTIDADE");
+		formatarTexto();
 		System.out.println();
 		
 		for (ItemCarrinho item : this.itens) {
 			this.mostraItem(item);
 			
-		
 		}
-		
 	}
 	
-	//Método que mostra items adicionado
-	private void mostraItem(ItemCarrinho item) {
+	//Método que mostra items adicionados
+	private void mostraItem(ItemCarrinho item){
 		Produto produto = item.getProduto();
 		String id = produto.getId();
 		String nome = produto.getNome();
